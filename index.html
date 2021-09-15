@@ -11,7 +11,28 @@
     <div id="app">
       <button>clik</button>
       <div class="box">
-        <p>hello my project</p>
+        <h4>
+          <span>Mouse position = </span>
+          <span id="mouse_pos">0</span>
+        </h4>
+        <h4>
+          <span>cursor position = </span>
+          <span id="cursor_pos">0</span>
+        </h4>
+        <h4>
+          <span>shadow position = </span>
+          <span id="shadow_pos">0</span>
+        </h4>
+      </div>
+      <div class="cursor__wrapper">
+        <svg height="10" width="10" viewBox="0 0 10 10" id="cursor__shadow">
+          <circle r="4" stroke="purple" stroke-width="2" fill="blue" cx="5" cy="5"/>
+        </svg>
+      </div>
+      <div class="cursor__wrapper">
+        <svg height="10" width="10" viewBox="0 0 10 10" id="cursor">
+          <circle r="2" fill="blue" cx="5" cy="5"/>
+        </svg>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
